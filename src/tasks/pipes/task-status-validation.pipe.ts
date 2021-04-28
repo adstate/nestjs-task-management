@@ -10,8 +10,6 @@ export class TaskStatusValidationPipe implements PipeTransform {
     ];
 
     transform(value: any) {
-        console.log(value);
-
         value = value.toUpperCase();
 
         if (!this.isStatusValid(value)) {
